@@ -2,7 +2,7 @@
 
 ## Step 1: Project preparation
 
-- [ ] Create a folder to handle your project.
+- [x] Create a folder to handle your project.
 - [ ] Create a file `app.py` that will contain the code for your API.
 - [ ] Create a folder `preprocessing/` that will contain all the code to preprocess your data.
 - [ ] Create a folder `model/` that will contain your model.
