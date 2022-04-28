@@ -23,4 +23,4 @@ Data scrapped from the IMMO website: around 10 000 samples.
 - Create API
 - Deploy your app on Heroku
 
-Read detailed plan here.
+Read detailed plan [here](./Stages.md).
