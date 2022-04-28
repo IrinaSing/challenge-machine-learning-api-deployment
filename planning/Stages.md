@@ -3,10 +3,10 @@
 ## Step 1: Project preparation
 
 - [x] Create a folder to handle your project.
-- [ ] Create a file `app.py` that will contain the code for your API.
-- [ ] Create a folder `preprocessing/` that will contain all the code to preprocess your data.
-- [ ] Create a folder `model/` that will contain your model.
-- [ ] Create a folder `predict/` that will contain all the code to predict the price.
+- [x] Create a file `app.py` that will contain the code for your API.
+- [x] Create a folder `preprocessing/` that will contain all the code to preprocess your data.
+- [x] Create a folder `model/` that will contain your model.
+- [x] Create a folder `predict/` that will contain all the code to predict the price.
 
 ## Step 2: Preprocessing pipeline
 
