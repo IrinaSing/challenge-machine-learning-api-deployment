@@ -20,4 +20,13 @@ def preprocess():
     df["Garden"].replace({"Unknown": False}, inplace=True)
     df['Furnished'] = df['Furnished'].fillna(False)
 
-    return df
+    # sq meter price
+    df1 = df.copy()
+    df1['Price_per_sq'] = df1['Price'] / df1['Living_area']
+    location_stat = df.groupby('Location')['Location'].agg('count').sort_values(ascending=False)
+
+    # reduce amount of unpopular locations
+    loc_less_10 = location_stat[location_stat<=10]
+    df1.Location = df1.Location.apply(lambda x: 'Other' if x in loc_less_10 else x)
+
+    return df1
