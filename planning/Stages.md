@@ -19,7 +19,15 @@ In the `preprocessing/` folder:
 - [x] This file should contain a function called `preprocess()` that will take a new house's data as input and return those data preprocessed as output.
 - [ ] If your data doesn't contain the required information, you should return an error to the user.
 
-## Step 3: Fit your data
+## Step 3: Create a model
+
+In the `model/` folder:
+
+- [x] Create the file `model`.
+- [x] Create a model based on linear regression.
+- [x] Export model using pickle.
+
+## Step 4: Fit your data
 
 Fit your data to your model.
 
@@ -28,7 +36,7 @@ In the `predict/` folder:
 - [ ] Create the `prediction.py` file that will contain all the code used to predict a new house's price.
 - [ ] Your file should contain a function `train()` that will create and store the model and a function `predict()` that will take your preprocessed data as an input and return a price as output using your stored model.
 
-## Step 4: Create your API
+## Step 5: Create your API
 
 In your `app.py` file, create a Flask API that contains:
 
@@ -38,7 +46,7 @@ In your `app.py` file, create a Flask API that contains:
   - [ ] `POST` request that receives the data of a house in JSON format.
   - [ ] `GET` request returning a string to explain what the `POST` expect (data and format).
 
-## Step 5: Deploy your app on Heroku
+## Step 6: Deploy your app on Heroku
 
 - [ ] Deploy your web app on Heroku using the requirements.txt file. You can use the following tutorial as a reference: [Deploying a Flask Application to Heroku](https://stackabuse.com/deploying-a-flask-application-to-heroku/)
 
