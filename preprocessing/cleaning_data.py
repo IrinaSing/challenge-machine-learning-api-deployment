@@ -56,8 +56,10 @@ def preprocess():
     location_stat = df_clean.groupby('Location')['Location'].agg('count').sort_values(ascending=False)
     loc_less_10 = location_stat[location_stat<=10]
     df_clean.Location = df_clean.Location.apply(lambda x: 'Other' if x in loc_less_10 else x)
+    df_clean1 = df_clean.drop('Price_per_sq', axis='columns')
+    df_clean1
 
-    df_clean.to_csv('clean_df.csv')
+    df_clean1.to_csv('clean_df.csv')
     # return df_clean
     # print(df_clean.shape)
 
