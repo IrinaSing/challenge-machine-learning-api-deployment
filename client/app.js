@@ -1,52 +1,27 @@
 function getFurnishedVal() {
   const furnishedVal = document.getElementById("furnished");
-  console.log("furnishedVal", furnishedVal.checked);
-  for (let i in furnishedVal) {
-    if (furnishedVal[i].checked) {
-      return parseInt(i) + 1;
-    }
-  }
-  return -1; // Invalid Value
+  console.log(furnishedVal.checked);
+  return furnishedVal.checked;
 }
 
 function getTerracedVal() {
   const terracedVal = document.getElementById("terrace");
-  for (let i in terracedVal) {
-    if (terracedVal[i].checked) {
-      return parseInt(i) + 1;
-    }
-  }
-  return -1;
+  return terracedVal.checked;
 }
 
 function getGardenVal() {
   const gardenVal = document.getElementById("garden");
-  for (let i in gardenVal) {
-    if (gardenVal[i].checked) {
-      return parseInt(i) + 1;
-    }
-  }
-  return -1;
+  return gardenVal.checked;
 }
 
 function getFireVal() {
   const fireVal = document.getElementById("openfire");
-  for (let i in fireVal) {
-    if (fireVal[i].checked) {
-      return parseInt(i) + 1;
-    }
-  }
-  return -1;
+  return fireVal.checked;
 }
 
 function getPoolVal() {
   const poolVal = document.getElementById("pool");
-  for (let i in poolVal) {
-    if (poolVal[i].checked) {
-      return parseInt(i) + 1;
-    }
-  }
-  return -1;
+  return poolVal.checked;
 }
 
 function estimatedPriceOnclick() {
@@ -56,11 +31,11 @@ function estimatedPriceOnclick() {
   const condition = document.getElementById("uiCondition").value;
   const numOfBedrooms = document.getElementById("uiBedrooms").value;
   const location = document.getElementById("uiLocations").value;
-  const furnished = getFurnishedVal().value;
-  const terrace = getTerracedVal().value;
-  const garden = getGardenVal().value;
-  const openFire = getFireVal().value;
-  const pool = getPoolVal().value;
+  const furnished = getFurnishedVal();
+  const terrace = getTerracedVal();
+  const garden = getGardenVal();
+  const openFire = getFireVal();
+  const pool = getPoolVal();
   const estPrice = document.getElementById("uiEstimatedPrice");
   console.log(
     livingArea,
