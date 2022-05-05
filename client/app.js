@@ -55,10 +55,36 @@ function onClickedEstimatePrice() {
   const condition = getElementById("uiCondition");
   const numOfBedrooms = getElementById("uiBedrooms");
   const location = document.getElementById("uiLocations");
+  const furnished = getFurnishedVal();
+  const terrace = getTerracedVal();
+  const garden = getGardenVal();
+  const openFire = getFireVal();
+  const pool = getPoolVal();
   const estPrice = document.getElementById("uiEstimatedPrice");
 
   // var url = "http://127.0.0.1:5000/predict_home_price"; //Use this if you are NOT using nginx which is first 7 tutorials
   var url = "/api/predict_home_price"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
+
+  $.post(
+    url,
+    {
+      location: location.value,
+      number_of_bedrooms: numOfBedrooms,
+      living_area: parseFloat(livingArea.value),
+      furnished: furnished.value,
+      open_fireplace: openFire.value,
+      terrace: terrace.value,
+      garden: garden.value,
+      surface_area_land: parseFloat(surfaceArea.value),
+      pool: pool.value,
+      condition: condition.value,
+    },
+    function (data, status) {
+      console.log(data.estimated_price);
+      estPrice.innerHTML = "<h2>" + data.estimated_price.toString() + " €</h2>";
+      console.log(status);
+    }
+  );
 }
 
 function onPageLoad() {
@@ -67,9 +93,30 @@ function onPageLoad() {
   $.get(url, function (data, status) {
     console.log("got response for get location names");
     if (data) {
-      const locations = data.locations;
-      const uilocations = document.getElementById("uilocations");
-      $("#uilocations").append(opt);
+      var locations = data.locations;
+      var uiLocations = document.getElementById("uiLocations");
+      $("#uiLocations").empty();
+      for (var i in locations) {
+        var opt = new Option(locations[i]);
+        $("#uiLocations").append(opt);
+      }
+    }
+  });
+}
+
+function onPageLoad() {
+  console.log("document loaded");
+  var url = "http://127.0.0.1:5000/get_location_names";
+  $.get(url, function (data, status) {
+    console.log("got response for get_location_names request");
+    if (data) {
+      var locations = data.locations;
+      var uiLocations = document.getElementById("uiLocations");
+      $("#uiLocations").empty();
+      for (var i in locations) {
+        var opt = new Option(locations[i]);
+        $("#uiLocations").append(opt);
+      }
     }
   });
 }
