@@ -1,8 +1,19 @@
 function getFurnishedVal() {
   const furnishedVal = document.getElementById("furnished");
+  console.log(furnishedVal.checked);
   return furnishedVal.checked;
 }
-
+/*
+function getFurnishedVal() {
+  var furnishedVal = document.getElementById("furnished");
+  for (let i in furnishedVal) {
+    if (furnishedVal.checked) {
+      return parseInt(i) + 1;
+    }
+  }
+  return -1; // Invalid Value
+}
+*/
 function getTerracedVal() {
   const terracedVal = document.getElementById("terrace");
   return terracedVal.checked;
@@ -24,6 +35,7 @@ function getPoolVal() {
 }
 
 function estimatedPriceOnclick() {
+  console.log("Estimate price button clicked");
   const livingArea = document.getElementById("uiLivingArea").value;
   const surfaceArea = document.getElementById("uiSurfaceArea").value;
   const condition = document.getElementById("uiCondition").value;
@@ -35,6 +47,19 @@ function estimatedPriceOnclick() {
   const openFire = getFireVal();
   const pool = getPoolVal();
   const estPrice = document.getElementById("uiEstimatedPrice");
+  console.log(
+    livingArea,
+    surfaceArea,
+    condition,
+    numOfBedrooms,
+    location,
+    furnished,
+    terrace,
+    garden,
+    openFire,
+    pool,
+    estPrice
+  );
   const url = "http://127.0.0.1:5000/predict_house_price"; //Use this if you are NOT using nginx which is first 7 tutorials
   //const url = "/api/predict_home_price"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
 
@@ -53,6 +78,7 @@ function estimatedPriceOnclick() {
       condition: condition,
     },
     function (data, status) {
+      console.log(data.estimated_price);
       estPrice.innerHTML = "<h2>" + data.estimated_price.toString() + " €</h2>";
       console.log(status);
     }

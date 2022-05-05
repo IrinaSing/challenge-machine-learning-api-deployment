@@ -1,14 +1,13 @@
 # code for your API
 from urllib import response
-from flask import Flask, request, jsonify
-from flask_cors import CORS
+from flask import Flask, request, jsonify, render_template
 from predict import prediction as prediction
 
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
-    return "hi"
+def index():
+	return render_template("app.html")
 
 @app.route('/get_location_names', methods=['GET'])
 def get_location_names():
