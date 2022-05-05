@@ -2,7 +2,7 @@
 #from ctypes import util
 from urllib import response
 from flask import Flask, request, jsonify
-import util
+import predict.prediction as prediction
 
 app = Flask(__name__)
 
@@ -13,7 +13,7 @@ def hello():
 @app.route('/get_location_names', methods=['GET'])
 def get_location_names():
     response = jsonify({
-        'locations': util.get_location_names()
+        'locations': prediction.get_location_names()
     })
     response.headers.add('Access-Control-Allow-Origin', '*')
 
@@ -33,7 +33,7 @@ def predict_house_price():
     condition = request.form['condition']
 
     response = jsonify({
-        'estimated_price': util.get_estimated_price(location,number_of_bedrooms, living_area, furnished, open_fireplace, terrace, garden, surface_area_land,pool, condition)
+        'estimated_price': prediction.get_estimated_price(location,number_of_bedrooms, living_area, furnished, open_fireplace, terrace, garden, surface_area_land,pool, condition)
     })
 
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -42,5 +42,5 @@ def predict_house_price():
 
 if __name__ == "__main__":
     print("start flask server")
-    util.load_saved_artifacts()
+    prediction.load_saved_artifacts()
     app.run()
