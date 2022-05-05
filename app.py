@@ -1,5 +1,4 @@
 # code for your API
-#from ctypes import util
 from urllib import response
 from flask import Flask, request, jsonify
 import predict.prediction as prediction
