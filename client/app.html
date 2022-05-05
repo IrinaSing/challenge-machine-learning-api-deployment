@@ -106,7 +106,6 @@
                 min="0"
                 max="5"
                 value="0"
-                oninput="this.form.amountRange2.value=this.value"
               />
             </div>
           </div>
@@ -150,13 +149,13 @@
           </div>
           <div>
             <button
-              type="submit"
+              type="button"
               onclick="estimatedPriceOnclick()"
               class="btn btn-lg btn-block"
             >
               Calculate the price
             </button>
-            <div id="uiEstimatedPrice" class="result"><h2></h2></div>
+            <div id="uiEstimatedPrice"><h2></h2></div>
           </div>
         </form>
       </div>

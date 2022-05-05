@@ -36,7 +36,7 @@ def get_estimated_price(location,number_of_bedrooms, living_area, furnished, ope
 
     if cond_index>=0:
         x[cond_index] = 1
-    
+    # print(len(__features) + len(__condition) + len(__locations))
     return round(__model.predict([x])[0],2)
 
 
@@ -44,6 +44,9 @@ def get_estimated_price(location,number_of_bedrooms, living_area, furnished, ope
 
 def get_location_names():
     return __locations
+
+def get_condition():
+    return __condition
 
 
 def load_saved_artifacts():
@@ -53,11 +56,14 @@ def load_saved_artifacts():
     global __features
     global __condition
 
-    with open("./model/columns.json", 'r') as f:
-        json_loaded = json.load(f)
-        __locations = json_loaded['locations']
-        __features = json_loaded['features']
-        __condition = json_loaded['condition']
+    try:
+        with open('./model/columns.json', 'r') as f:
+            json_loaded = json.load(f)
+            __locations = json_loaded['locations']
+            __features = json_loaded['features']
+            __condition = json_loaded['condition']
+    except:
+        FileNotFoundError
 
     global __model
     if __model is None:
@@ -69,5 +75,5 @@ def load_saved_artifacts():
     
 if __name__ == '__main__':
     load_saved_artifacts()
-    #print(get_estimated_price('Gent', 3, 200, False, False, True, True, 200, False, 'as_new'))
+    # print(get_estimated_price('Gent', 3, 200, False, False, True, True, 200, False, 'as_new'))
     #print(get_estimated_price('Gent', 3, 300, True, False, False, True, 100, False, 'to_renovate'))

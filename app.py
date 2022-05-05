@@ -1,7 +1,8 @@
 # code for your API
 from urllib import response
 from flask import Flask, request, jsonify
-import predict.prediction as prediction
+from flask_cors import CORS
+from predict import prediction as prediction
 
 app = Flask(__name__)
 
@@ -17,6 +18,15 @@ def get_location_names():
     response.headers.add('Access-Control-Allow-Origin', '*')
 
     return response
+
+@app.route('/get_condition', methods=['GET'])
+def get_condition():
+    response = jsonify({
+        'condition': prediction.get_condition()
+    })
+    response.headers.add('Access-Control-Allow-Origin', '*')
+
+    return response    
 
 @app.route('/predict_house_price', methods=['POST'])
 def predict_house_price():

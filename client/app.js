@@ -1,6 +1,7 @@
 function getFurnishedVal() {
-  var furnishedVal = document.getElementsByName("furnished");
-  for (var i in furnishedVal) {
+  const furnishedVal = document.getElementById("furnished");
+  console.log("furnishedVal", furnishedVal.checked);
+  for (let i in furnishedVal) {
     if (furnishedVal[i].checked) {
       return parseInt(i) + 1;
     }
@@ -9,8 +10,8 @@ function getFurnishedVal() {
 }
 
 function getTerracedVal() {
-  var terracedVal = document.getElementsByName("terrace");
-  for (var i in terracedVal) {
+  const terracedVal = document.getElementById("terrace");
+  for (let i in terracedVal) {
     if (terracedVal[i].checked) {
       return parseInt(i) + 1;
     }
@@ -19,18 +20,18 @@ function getTerracedVal() {
 }
 
 function getGardenVal() {
-  var gardenVal = document.getElementsByName("garden");
-  for (var i in gardenVal) {
+  const gardenVal = document.getElementById("garden");
+  for (let i in gardenVal) {
     if (gardenVal[i].checked) {
       return parseInt(i) + 1;
     }
   }
-  return -1; // Invalid Value
+  return -1;
 }
 
 function getFireVal() {
-  var fireVal = document.getElementsByName("openfire");
-  for (var i in fireVal) {
+  const fireVal = document.getElementById("openfire");
+  for (let i in fireVal) {
     if (fireVal[i].checked) {
       return parseInt(i) + 1;
     }
@@ -39,8 +40,8 @@ function getFireVal() {
 }
 
 function getPoolVal() {
-  var poolVal = document.getElementsByName("pool");
-  for (var i in poolVal) {
+  const poolVal = document.getElementById("pool");
+  for (let i in poolVal) {
     if (poolVal[i].checked) {
       return parseInt(i) + 1;
     }
@@ -48,36 +49,48 @@ function getPoolVal() {
   return -1;
 }
 
-function onClickedEstimatePrice() {
+function estimatedPriceOnclick() {
   console.log("Estimate price button clicked");
-  const livingArea = getElementById("uiLivingArea");
-  const surfaceArea = getElementById("uiSurfaceArea");
-  const condition = getElementById("uiCondition");
-  const numOfBedrooms = getElementById("uiBedrooms");
-  const location = document.getElementById("uiLocations");
-  const furnished = getFurnishedVal();
-  const terrace = getTerracedVal();
-  const garden = getGardenVal();
-  const openFire = getFireVal();
-  const pool = getPoolVal();
+  const livingArea = document.getElementById("uiLivingArea").value;
+  const surfaceArea = document.getElementById("uiSurfaceArea").value;
+  const condition = document.getElementById("uiCondition").value;
+  const numOfBedrooms = document.getElementById("uiBedrooms").value;
+  const location = document.getElementById("uiLocations").value;
+  const furnished = getFurnishedVal().value;
+  const terrace = getTerracedVal().value;
+  const garden = getGardenVal().value;
+  const openFire = getFireVal().value;
+  const pool = getPoolVal().value;
   const estPrice = document.getElementById("uiEstimatedPrice");
-
-  // var url = "http://127.0.0.1:5000/predict_home_price"; //Use this if you are NOT using nginx which is first 7 tutorials
-  var url = "/api/predict_home_price"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
+  console.log(
+    livingArea,
+    surfaceArea,
+    condition,
+    numOfBedrooms,
+    location,
+    furnished,
+    terrace,
+    garden,
+    openFire,
+    pool,
+    estPrice
+  );
+  const url = "http://127.0.0.1:5000/predict_house_price"; //Use this if you are NOT using nginx which is first 7 tutorials
+  //const url = "/api/predict_home_price"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
 
   $.post(
     url,
     {
-      location: location.value,
+      location: location,
       number_of_bedrooms: numOfBedrooms,
-      living_area: parseFloat(livingArea.value),
-      furnished: furnished.value,
-      open_fireplace: openFire.value,
-      terrace: terrace.value,
-      garden: garden.value,
-      surface_area_land: parseFloat(surfaceArea.value),
-      pool: pool.value,
-      condition: condition.value,
+      living_area: parseFloat(livingArea),
+      furnished: furnished,
+      open_fireplace: openFire,
+      terrace: terrace,
+      garden: garden,
+      surface_area_land: parseFloat(surfaceArea),
+      pool: pool,
+      condition: condition,
     },
     function (data, status) {
       console.log(data.estimated_price);
@@ -88,34 +101,32 @@ function onClickedEstimatePrice() {
 }
 
 function onPageLoad() {
-  console.log("document is loaded");
-  const url = "http://127.0.0.1:5000/get_location_names";
-  $.get(url, function (data, status) {
-    console.log("got response for get location names");
+  console.log("document loaded");
+  const url_loc = "http://127.0.0.1:5000/get_location_names";
+  const url_cond = "http://127.0.0.1:5000/get_condition";
+
+  $.get(url_loc, function (data, status) {
+    console.log("got response for get_location_names request");
     if (data) {
-      var locations = data.locations;
-      var uiLocations = document.getElementById("uiLocations");
+      const locations = data.locations;
+      const uiLocations = document.getElementById("uiLocations");
       $("#uiLocations").empty();
-      for (var i in locations) {
-        var opt = new Option(locations[i]);
+      for (let i in locations) {
+        const opt = new Option(locations[i]);
         $("#uiLocations").append(opt);
       }
     }
   });
-}
 
-function onPageLoad() {
-  console.log("document loaded");
-  var url = "http://127.0.0.1:5000/get_location_names";
-  $.get(url, function (data, status) {
-    console.log("got response for get_location_names request");
+  $.get(url_cond, function (data, status) {
+    console.log("got response for get_condition request");
     if (data) {
-      var locations = data.locations;
-      var uiLocations = document.getElementById("uiLocations");
-      $("#uiLocations").empty();
-      for (var i in locations) {
-        var opt = new Option(locations[i]);
-        $("#uiLocations").append(opt);
+      const condition = data.condition;
+      const uiCondition = document.getElementById("uiCondition");
+      $("#uiCondition").empty();
+      for (let i in condition) {
+        const opt = new Option(condition[i]);
+        $("#uiCondition").append(opt);
       }
     }
   });

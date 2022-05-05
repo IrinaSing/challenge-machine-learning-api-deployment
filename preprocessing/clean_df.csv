@@ -15,7 +15,7 @@
 30,Other,415000.0,3.0,207.0,False,False,True,True,569.0,False,AS_NEW
 31,Other,405000.0,3.0,207.0,False,False,True,True,382.0,False,AS_NEW
 35,Deurne,325000.0,3.0,113.0,False,False,True,True,102.0,False,JUST_RENOVATED
-37,Liège,299000.0,4.0,176.0,False,False,True,True,160.0,False,JUST_RENOVATED
+37,Liege,299000.0,4.0,176.0,False,False,True,True,160.0,False,JUST_RENOVATED
 38,Other,332000.0,3.0,235.0,False,False,True,False,675.0,False,GOOD
 43,Hasselt,268000.0,4.0,197.0,False,False,False,True,195.0,False,TO_BE_DONE_UP
 55,Merksem,399000.0,3.0,210.0,False,False,True,False,0.0,False,GOOD
@@ -285,7 +285,7 @@
 712,Other,245000.0,3.0,82.0,False,False,False,False,45.0,False,AS_NEW
 713,Berchem,349000.0,4.0,151.0,False,False,True,False,57.0,False,GOOD
 714,Braine-l'Alleud,325000.0,3.0,150.0,False,False,False,True,174.0,False,GOOD
-716,Liège,299000.0,3.0,131.0,False,False,True,False,0.0,False,JUST_RENOVATED
+716,Liege,299000.0,3.0,131.0,False,False,True,False,0.0,False,JUST_RENOVATED
 717,Antwerpen,450000.0,3.0,150.0,False,True,True,True,150.0,False,GOOD
 720,Borgerhout,315000.0,3.0,183.0,False,False,True,False,0.0,False,GOOD
 722,Nivelles,395000.0,4.0,270.0,False,False,True,False,187.0,False,GOOD
@@ -601,7 +601,7 @@
 1598,Other,295000.0,5.0,168.0,False,False,False,False,407.0,False,JUST_RENOVATED
 1600,Other,279000.0,2.0,100.0,False,False,True,False,40.0,False,GOOD
 1601,Other,260000.0,2.0,157.0,False,False,False,False,473.0,False,GOOD
-1602,Liège,199500.0,4.0,154.0,True,False,False,True,80.0,False,GOOD
+1602,Liege,199500.0,4.0,154.0,True,False,False,True,80.0,False,GOOD
 1603,Other,199000.0,3.0,133.0,False,False,True,False,437.0,False,AS_NEW
 1606,Other,358000.0,4.0,174.0,False,False,False,True,333.0,False,AS_NEW
 1608,Other,149000.0,3.0,104.0,False,False,True,True,0.0,False,TO_RENOVATE
@@ -775,7 +775,7 @@
 2103,Temse,275000.0,3.0,175.0,False,False,True,True,0.0,False,GOOD
 2104,Other,430000.0,3.0,245.0,False,False,False,True,570.0,False,Unknown
 2112,Blankenberge,310000.0,2.0,145.0,False,False,True,True,130.0,False,GOOD
-2113,Liège,139000.0,3.0,96.0,False,False,False,False,0.0,False,GOOD
+2113,Liege,139000.0,3.0,96.0,False,False,False,False,0.0,False,GOOD
 2116,Other,288000.0,4.0,182.0,False,True,True,True,596.0,False,GOOD
 2117,Other,150000.0,2.0,140.0,False,False,True,True,250.0,False,TO_RENOVATE
 2118,Herseaux,179000.0,3.0,150.0,False,False,True,True,539.0,False,TO_BE_DONE_UP
@@ -1299,7 +1299,7 @@
 3495,Other,565000.0,4.0,195.0,False,False,True,False,192.0,False,GOOD
 3496,Other,269000.0,4.0,140.0,False,False,True,True,210.0,False,GOOD
 3506,Other,565000.0,3.0,201.0,False,False,True,True,192.0,False,GOOD
-3510,Liège,245000.0,3.0,143.0,False,True,True,True,697.0,False,TO_RENOVATE
+3510,Liege,245000.0,3.0,143.0,False,True,True,True,697.0,False,TO_RENOVATE
 3511,Deurne,249500.0,3.0,131.0,False,False,True,False,82.0,False,TO_RENOVATE
 3513,Other,133400.0,5.0,215.0,False,False,False,False,629.0,False,TO_RENOVATE
 3515,Other,50000.0,2.0,95.0,False,False,False,False,0.0,False,TO_RENOVATE
@@ -1336,7 +1336,7 @@
 3581,Berchem,369000.0,2.0,125.0,False,False,False,True,106.0,False,GOOD
 3582,Other,195000.0,4.0,236.0,False,False,True,False,280.0,False,Unknown
 3586,Other,166000.0,4.0,168.0,False,False,True,False,0.0,False,GOOD
-3588,Liège,229000.0,2.0,105.0,False,False,True,False,0.0,False,GOOD
+3588,Liege,229000.0,2.0,105.0,False,False,True,False,0.0,False,GOOD
 3590,Mechelen,249000.0,3.0,165.0,False,False,True,True,143.0,False,TO_RENOVATE
 3592,Other,379000.0,3.0,145.0,False,False,True,True,145.0,False,TO_BE_DONE_UP
 3593,Aalst,218000.0,3.0,154.0,False,False,False,False,100.0,False,GOOD
@@ -1362,7 +1362,7 @@
 3643,Other,175000.0,4.0,170.0,False,False,False,False,480.0,False,GOOD
 3644,Lier,379000.0,3.0,125.0,False,False,False,False,0.0,False,GOOD
 3645,Other,438000.0,4.0,216.0,False,False,True,True,0.0,False,TO_BE_DONE_UP
-3652,Liège,110000.0,3.0,122.0,False,False,False,False,83.0,False,TO_BE_DONE_UP
+3652,Liege,110000.0,3.0,122.0,False,False,False,False,83.0,False,TO_BE_DONE_UP
 3658,Gent,337000.0,3.0,123.0,False,False,True,False,67.0,False,GOOD
 3660,Other,180000.0,3.0,100.0,False,False,True,False,0.0,False,AS_NEW
 3666,Other,150000.0,3.0,147.0,False,False,False,False,310.0,False,TO_BE_DONE_UP
@@ -1420,12 +1420,12 @@
 3812,Verviers,177000.0,4.0,170.0,False,False,True,True,165.0,False,TO_BE_DONE_UP
 3815,Gent,339000.0,3.0,129.0,False,False,True,False,70.0,False,AS_NEW
 3816,Other,460000.0,3.0,155.0,False,False,True,True,350.0,False,AS_NEW
-3819,Liège,160000.0,4.0,125.0,False,False,True,False,50.0,False,TO_BE_DONE_UP
+3819,Liege,160000.0,4.0,125.0,False,False,True,False,50.0,False,TO_BE_DONE_UP
 3822,Antwerpen,395000.0,4.0,229.0,False,False,True,True,125.0,False,GOOD
 3823,Other,399000.0,4.0,160.0,False,False,False,False,50.0,False,GOOD
 3826,Other,289000.0,2.0,157.0,False,False,True,True,289.0,False,GOOD
 3828,Antwerpen,375000.0,3.0,130.0,False,False,False,True,91.0,False,GOOD
-3835,Liège,220000.0,3.0,130.0,False,False,True,True,0.0,True,AS_NEW
+3835,Liege,220000.0,3.0,130.0,False,False,True,True,0.0,True,AS_NEW
 3836,Seraing,135000.0,4.0,132.0,False,False,True,True,300.0,False,TO_BE_DONE_UP
 3838,Other,450000.0,4.0,221.0,False,False,True,True,920.0,False,JUST_RENOVATED
 3840,Other,250000.0,3.0,160.0,False,False,True,False,0.0,False,JUST_RENOVATED
@@ -1583,7 +1583,7 @@
 4218,Hoboken,275000.0,3.0,166.0,False,True,False,True,285.0,False,GOOD
 4219,Other,478000.0,3.0,163.0,False,False,True,True,713.0,False,TO_BE_DONE_UP
 4221,Beersel,478000.0,3.0,163.0,False,False,True,True,713.0,False,TO_BE_DONE_UP
-4222,Liège,189000.0,4.0,100.0,False,False,True,False,70.0,False,GOOD
+4222,Liege,189000.0,4.0,100.0,False,False,True,False,70.0,False,GOOD
 4227,Blankenberge,178000.0,3.0,92.0,False,False,False,False,0.0,False,TO_BE_DONE_UP
 4229,Other,185000.0,2.0,97.0,False,False,True,False,0.0,False,TO_BE_DONE_UP
 4234,Other,174000.0,2.0,136.0,False,False,False,True,470.0,False,GOOD
@@ -1895,7 +1895,7 @@
 5063,Merksem,329000.0,3.0,140.0,False,False,False,True,108.0,False,AS_NEW
 5068,Other,145000.0,3.0,149.0,False,False,True,False,495.0,False,TO_RENOVATE
 5069,Other,320000.0,2.0,134.0,False,False,True,True,391.0,False,TO_BE_DONE_UP
-5071,Liège,216000.0,4.0,111.0,False,False,True,True,205.0,False,GOOD
+5071,Liege,216000.0,4.0,111.0,False,False,True,True,205.0,False,GOOD
 5073,Seraing,135000.0,3.0,128.0,False,False,False,True,120.0,False,TO_RENOVATE
 5078,Other,189000.0,3.0,145.0,False,False,False,True,662.0,False,GOOD
 5079,Eeklo,339000.0,3.0,153.0,False,False,True,False,0.0,False,AS_NEW
@@ -1999,8 +1999,8 @@
 5360,Other,379000.0,4.0,152.0,False,False,False,True,299.0,False,GOOD
 5366,Antwerpen,180000.0,2.0,75.0,False,False,True,False,100.0,False,JUST_RENOVATED
 5368,Seraing,55000.0,2.0,107.0,False,False,False,False,512.0,False,TO_RENOVATE
-5372,Liège,350000.0,4.0,240.0,False,False,True,False,90.0,False,GOOD
-5374,Liège,350000.0,4.0,240.0,False,False,True,False,90.0,False,GOOD
+5372,Liege,350000.0,4.0,240.0,False,False,True,False,90.0,False,GOOD
+5374,Liege,350000.0,4.0,240.0,False,False,True,False,90.0,False,GOOD
 5378,Other,299000.0,3.0,164.0,False,False,False,True,120.0,False,GOOD
 5379,Brugge,479000.0,4.0,260.0,False,False,False,False,297.0,False,GOOD
 5380,Other,479000.0,4.0,260.0,False,False,False,False,297.0,False,GOOD
@@ -2117,7 +2117,7 @@
 5645,Other,249000.0,3.0,142.0,False,False,False,False,0.0,False,GOOD
 5646,Other,361718.0,3.0,202.0,False,False,False,True,421.0,False,AS_NEW
 5651,Willebroek,435000.0,3.0,215.0,False,False,False,True,249.0,False,AS_NEW
-5654,Liège,179000.0,5.0,175.0,False,False,False,False,70.0,False,TO_RENOVATE
+5654,Liege,179000.0,5.0,175.0,False,False,False,False,70.0,False,TO_RENOVATE
 5656,Menen,145000.0,2.0,130.0,False,False,False,False,85.0,False,GOOD
 5659,Zelzate,220000.0,3.0,106.0,False,False,True,False,74.0,False,AS_NEW
 5662,Other,389000.0,4.0,181.0,False,False,True,False,909.0,False,GOOD
@@ -2244,7 +2244,7 @@
 6001,Gent,250000.0,2.0,86.0,False,False,True,False,36.0,False,GOOD
 6003,Charleroi,139000.0,5.0,178.0,False,False,True,True,0.0,False,TO_BE_DONE_UP
 6011,Other,260000.0,3.0,120.0,False,False,True,False,327.0,False,GOOD
-6013,Liège,140000.0,2.0,178.0,False,False,False,True,218.0,False,TO_RENOVATE
+6013,Liege,140000.0,2.0,178.0,False,False,False,True,218.0,False,TO_RENOVATE
 6016,Other,99000.0,2.0,101.0,False,False,False,False,88.0,False,TO_RENOVATE
 6021,Verviers,240000.0,3.0,110.0,False,True,True,True,280.0,False,AS_NEW
 6022,Other,454000.0,3.0,177.0,False,False,False,False,525.0,False,AS_NEW
@@ -2272,7 +2272,7 @@
 6065,Other,259000.0,4.0,105.0,False,False,True,True,359.0,False,AS_NEW
 6068,Other,330000.0,4.0,203.0,False,False,True,True,0.0,False,TO_BE_DONE_UP
 6070,Other,265000.0,5.0,209.0,False,False,True,True,430.0,False,GOOD
-6071,Liège,155000.0,4.0,113.0,False,False,True,False,55.0,False,TO_RENOVATE
+6071,Liege,155000.0,4.0,113.0,False,False,True,False,55.0,False,TO_RENOVATE
 6072,Other,325000.0,3.0,139.0,False,False,False,False,0.0,False,GOOD
 6073,Other,400561.0,3.0,186.0,False,False,True,True,282.0,False,AS_NEW
 6075,Other,365000.0,5.0,150.0,False,False,True,False,269.0,False,AS_NEW
@@ -2642,9 +2642,9 @@
 7051,Anderlecht,429000.0,5.0,171.0,False,False,False,True,0.0,False,AS_NEW
 7052,Beerse,525000.0,4.0,273.0,False,False,True,True,896.0,False,GOOD
 7059,Other,240000.0,2.0,176.0,False,False,False,False,294.0,False,AS_NEW
-7063,Liège,272500.0,3.0,136.0,False,False,True,True,224.0,False,AS_NEW
+7063,Liege,272500.0,3.0,136.0,False,False,True,True,224.0,False,AS_NEW
 7064,Other,175000.0,5.0,220.0,False,False,True,False,297.0,False,TO_RENOVATE
-7068,Liège,267500.0,3.0,136.0,False,False,True,True,245.0,False,AS_NEW
+7068,Liege,267500.0,3.0,136.0,False,False,True,True,245.0,False,AS_NEW
 7069,Other,259000.0,3.0,125.0,False,False,True,False,80.0,False,AS_NEW
 7070,Other,150000.0,3.0,140.0,False,False,True,False,200.0,False,GOOD
 7072,Turnhout,349000.0,3.0,270.0,False,True,True,False,270.0,False,GOOD
@@ -3050,7 +3050,7 @@
 8025,Other,156800.0,2.0,127.0,False,False,True,True,100.0,False,AS_NEW
 8026,Other,372000.0,3.0,180.0,False,False,False,True,180.0,False,GOOD
 8028,Lier,350000.0,5.0,180.0,False,False,False,False,94.0,False,JUST_RENOVATED
-8035,Liège,140000.0,4.0,130.0,False,False,False,False,60.0,False,TO_RENOVATE
+8035,Liege,140000.0,4.0,130.0,False,False,False,False,60.0,False,TO_RENOVATE
 8037,Other,189000.0,3.0,130.0,False,False,False,False,100.0,False,GOOD
 8038,Other,349500.0,3.0,154.0,False,False,False,False,549.0,False,TO_BE_DONE_UP
 8041,Other,115000.0,3.0,150.0,False,False,False,False,150.0,False,TO_RENOVATE
@@ -3132,8 +3132,8 @@
 8223,Other,495000.0,3.0,190.0,False,False,True,False,0.0,False,AS_NEW
 8226,Geraardsbergen,133000.0,3.0,150.0,False,False,True,False,50.0,False,GOOD
 8227,Other,249000.0,3.0,159.0,False,False,True,True,803.0,False,GOOD
-8228,Liège,189000.0,3.0,110.0,False,False,True,False,125.0,False,GOOD
-8229,Liège,199000.0,4.0,127.0,False,False,False,True,270.0,False,GOOD
+8228,Liege,189000.0,3.0,110.0,False,False,True,False,125.0,False,GOOD
+8229,Liege,199000.0,4.0,127.0,False,False,False,True,270.0,False,GOOD
 8230,Other,229500.0,2.0,102.0,False,False,True,False,126.0,False,GOOD
 8232,Other,425000.0,3.0,198.0,False,False,False,False,516.0,False,AS_NEW
 8234,Other,200000.0,2.0,151.0,False,False,True,True,100.0,False,AS_NEW
@@ -3269,7 +3269,7 @@
 8606,Other,375000.0,3.0,200.0,False,False,False,True,536.0,False,AS_NEW
 8607,Other,355000.0,4.0,260.0,False,True,True,False,470.0,False,TO_RESTORE
 8611,Brugge,535000.0,3.0,207.0,False,False,True,False,111.0,False,AS_NEW
-8614,Liège,219000.0,3.0,160.0,False,False,False,False,194.0,False,TO_BE_DONE_UP
+8614,Liege,219000.0,3.0,160.0,False,False,False,False,194.0,False,TO_BE_DONE_UP
 8620,Other,179000.0,2.0,150.0,False,False,False,False,0.0,False,Unknown
 8622,Other,199000.0,3.0,168.0,False,False,False,True,103.0,False,Unknown
 8625,Mol,239000.0,3.0,185.0,False,False,False,False,366.0,False,JUST_RENOVATED
@@ -3309,8 +3309,8 @@
 8721,Halle,399000.0,4.0,176.0,False,False,True,False,70.0,False,GOOD
 8722,Other,139000.0,5.0,141.0,False,False,False,False,108.0,False,GOOD
 8723,Other,190000.0,5.0,180.0,False,False,True,True,0.0,False,JUST_RENOVATED
-8725,Liège,249000.0,3.0,242.0,False,False,True,True,242.0,False,GOOD
-8726,Liège,259000.0,3.0,110.0,False,False,True,True,245.0,False,GOOD
+8725,Liege,249000.0,3.0,242.0,False,False,True,True,242.0,False,GOOD
+8726,Liege,259000.0,3.0,110.0,False,False,True,True,245.0,False,GOOD
 8727,Other,235000.0,3.0,105.0,False,False,True,False,454.0,False,GOOD
 8728,Tubize,299000.0,4.0,163.0,False,False,False,False,0.0,False,JUST_RENOVATED
 8729,Mouscron,185000.0,3.0,100.0,False,False,True,True,186.0,False,AS_NEW
@@ -3416,7 +3416,7 @@
 9021,Deerlijk,235000.0,2.0,106.0,False,False,True,False,84.0,False,AS_NEW
 9023,Other,287000.0,2.0,124.0,False,False,False,False,292.0,False,GOOD
 9025,Other,229000.0,4.0,202.0,False,False,False,True,225.0,False,GOOD
-9027,Liège,120000.0,3.0,100.0,False,False,True,False,536.0,False,GOOD
+9027,Liege,120000.0,3.0,100.0,False,False,True,False,536.0,False,GOOD
 9034,Other,245000.0,4.0,150.0,False,False,False,True,488.0,False,GOOD
 9035,Other,430000.0,4.0,160.0,False,False,True,False,91.0,False,GOOD
 9047,Other,385000.0,2.0,140.0,False,False,False,False,336.0,False,JUST_RENOVATED
@@ -3639,7 +3639,7 @@
 9597,Other,450000.0,3.0,220.0,False,False,False,False,905.0,False,TO_BE_DONE_UP
 9598,Menen,199000.0,3.0,180.0,False,False,True,True,405.0,False,TO_BE_DONE_UP
 9599,Other,249000.0,3.0,160.0,False,False,False,False,400.0,False,AS_NEW
-9602,Liège,169000.0,5.0,120.0,False,False,True,False,34.0,False,TO_RENOVATE
+9602,Liege,169000.0,5.0,120.0,False,False,True,False,34.0,False,TO_RENOVATE
 9605,Other,260000.0,4.0,150.0,False,False,True,True,624.0,False,TO_RENOVATE
 9608,Other,175000.0,4.0,186.0,False,False,False,False,394.0,False,TO_BE_DONE_UP
 9614,Other,349000.0,4.0,275.0,False,False,True,True,260.0,False,TO_RENOVATE
@@ -3741,8 +3741,8 @@
 9834,Other,119000.0,3.0,103.0,False,False,True,False,70.0,False,GOOD
 9835,Other,165000.0,3.0,150.0,False,False,False,True,450.0,False,TO_BE_DONE_UP
 9836,Other,220000.0,2.0,100.0,False,False,True,False,255.0,False,AS_NEW
-9840,Liège,375000.0,4.0,170.0,False,False,True,False,0.0,False,GOOD
-9842,Liège,375000.0,4.0,170.0,False,False,True,False,0.0,False,GOOD
+9840,Liege,375000.0,4.0,170.0,False,False,True,False,0.0,False,GOOD
+9842,Liege,375000.0,4.0,170.0,False,False,True,False,0.0,False,GOOD
 9843,Other,299000.0,4.0,250.0,False,False,False,True,772.0,False,TO_BE_DONE_UP
 9844,Antwerp,194900.0,2.0,85.0,False,False,False,False,50.0,False,JUST_RENOVATED
 9846,Other,319000.0,3.0,158.0,False,False,False,False,239.0,False,AS_NEW
