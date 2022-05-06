@@ -20,7 +20,7 @@ function estimatedPriceOnclick() {
   // const url = "http://127.0.0.1:5000/predict_house_price"; //Use this if you are NOT using nginx which is first 7 tutorials
   //const url = "/api/predict_home_price"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
 
-  const url = "https://immopredictions.herokuapp.com/predict_house_price";
+  const url = "/predict_house_price";
 
   $.post(
     url,
@@ -44,7 +44,7 @@ function estimatedPriceOnclick() {
 function onPageLoad() {
   console.log("document loaded");
   // const url_loc = "http://127.0.0.1:5000/get_location_names";
-  const url_loc = "https://immopredictions.herokuapp.com/get_location_names";
+  const url_loc = "/get_location_names";
 
   $.get(url_loc, function (data, status) {
     console.log("got response for get_location_names request");
