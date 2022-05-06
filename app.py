@@ -18,30 +18,17 @@ def get_location_names():
 
     return response
 
-@app.route('/get_condition', methods=['GET'])
-def get_condition():
-    response = jsonify({
-        'condition': prediction.get_condition()
-    })
-    response.headers.add('Access-Control-Allow-Origin', '*')
-
-    return response    
-
 @app.route('/predict_house_price', methods=['POST'])
 def predict_house_price():
     location = request.form['location']
     number_of_bedrooms = int(request.form['number_of_bedrooms'])
     living_area = float(request.form['living_area'])
-    furnished = bool(request.form['furnished'])
-    open_fireplace = bool(request.form['open_fireplace'])
-    terrace = bool(request.form['terrace'])
-    garden = bool(request.form['garden'])
     surface_area_land = float(request.form['surface_area_land'])
     pool = bool(request.form['pool'])
-    condition = request.form['condition']
+    condition = int(request.form['condition'])
 
     response = jsonify({
-        'estimated_price': prediction.get_estimated_price(location,number_of_bedrooms, living_area, furnished, open_fireplace, terrace, garden, surface_area_land,pool, condition)
+        'estimated_price': prediction.get_estimated_price(location,number_of_bedrooms, living_area, surface_area_land,pool, condition)
     })
 
     response.headers.add('Access-Control-Allow-Origin', '*')

@@ -26,136 +26,114 @@
     <script src="/static/app.js"></script>
   </head>
   <body>
-    <div class="container pb-5 pt-4 id=formcontainer">
-      <div class="card-body">
+    <div class="container pb-5 pt-4 w-75 id=formcontainer">
+      <div class="card-body w-75">
+        <h2 class="card-title">Immo price predictor</h2>
         <form>
-          <div class="row">
-            <div class="form-group col-md-6">
-              <label for="uiLocations">Location</label>
-              <select id="uiLocations" class="form-control">
-                <option selected>Choose location</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="form-group col-md-6">
-              <label for="uiCondition">Condition</label>
-              <select id="uiCondition" class="form-control">
-                <option selected>Choose condition</option>
-                <option>...</option>
-              </select>
-            </div>
+          <div class="form-group">
+            <label for="uiLocations">Location</label>
+            <select id="uiLocations" class="form-control">
+              <option selected>Choose location</option>
+              <option>...</option>
+            </select>
           </div>
 
-          <div class="row">
-            <div class="form-group col-md-6">
-              <label for="uiLivingArea" class="form-label"
-                >Living area (m²)</label
-              >
-              <input
-                type="range"
-                id="uiLivingArea"
-                name="amountRange"
-                min="50"
-                max="300"
-                value="0"
-                oninput="this.form.amountInput.value=this.value"
-              />
-              <input
-                type="number"
-                id="uiLivingArea"
-                name="amountInput"
-                min="50"
-                max="300"
-                value="0"
-                oninput="this.form.amountRange.value=this.value"
-              />
-            </div>
-            <div class="form-group col-md-6">
-              <label for="uiSurfaceArea" class="form-label"
-                >Surface area (m²)</label
-              >
-              <input
-                type="range"
-                id="uiSurfaceArea"
-                name="amountRange1"
-                min="0"
-                max="1000"
-                value="0"
-                oninput="this.form.amountInput1.value=this.value"
-              />
-              <input
-                type="number"
-                id="uiSurfaceArea"
-                name="amountInput1"
-                min="0"
-                max="1000"
-                value="0"
-                oninput="this.form.amountRange1.value=this.value"
-              />
-            </div>
+          <div class="form-group">
+            <label for="uiLivingArea" class="form-label"
+              >Living area (m²)</label
+            >
+            <input
+              type="range"
+              id="uiLivingArea"
+              name="amountRange"
+              min="50"
+              max="300"
+              value="50"
+              oninput="this.form.amountInput.value=this.value"
+            />
+            <input
+              type="number"
+              id="uiLivingArea"
+              name="amountInput"
+              min="50"
+              max="300"
+              value="50"
+              oninput="this.form.amountRange.value=this.value"
+            />
           </div>
-          <div class="row">
-            <div class="form-group col-md-4">
-              <label for="uiBedrooms" class="form-label"
-                >Number of bedrooms</label
-              >
-              <input
-                type="number"
-                id="uiBedrooms"
-                name="amountInput2"
-                min="0"
-                max="5"
-                value="0"
-              />
-            </div>
+          <div class="form-group">
+            <label for="uiSurfaceArea" class="form-label"
+              >Surface area (m²)</label
+            >
+            <input
+              type="range"
+              id="uiSurfaceArea"
+              name="amountRange1"
+              min="0"
+              max="1000"
+              value="0"
+              oninput="this.form.amountInput1.value=this.value"
+            />
+            <input
+              type="number"
+              id="uiSurfaceArea"
+              name="amountInput1"
+              min="0"
+              max="1000"
+              value="0"
+              oninput="this.form.amountRange1.value=this.value"
+            />
           </div>
-          <div class="row">
-            <div class="form-group col-md-2">
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="furnished"
-                />
-                <label class="form-check-label" for="furnished"
-                  >Furnished</label
-                >
-              </div>
-            </div>
-            <div class="form-group col-md-2">
-              <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="terrace" />
-                <label class="form-check-label" for="terrace">Terrace</label>
-              </div>
-            </div>
-            <div class="form-group col-md-2">
-              <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="garden" />
-                <label class="form-check-label" for="garden">Garden</label>
-              </div>
-            </div>
-            <div class="form-group col-md-2">
-              <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="pool" />
-                <label class="form-check-label" for="pool">Pool</label>
-              </div>
-            </div>
-            <div class="form-group col-md-2">
-              <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="openfire" />
-                <label class="form-check-label" for="openfire">Open fire</label>
-              </div>
+
+          <div class="form-group">
+            <label for="uiCondition" class="form-label">Condition</label>
+            <input
+              type="range"
+              id="uiCondition"
+              name="amountRange3"
+              min="0"
+              max="5"
+              value="0"
+              oninput="this.form.amountInput3.value=this.value"
+            />
+            <input
+              type="number"
+              id="uiCondition"
+              name="amountInput3"
+              min="0"
+              max="5"
+              value="0"
+              oninput="this.form.amountRange3.value=this.value"
+            />
+          </div>
+          <div class="form-group">
+            <label for="uiBedrooms" class="form-label"
+              >Number of bedrooms</label
+            >
+            <input
+              type="number"
+              id="uiBedrooms"
+              name="amountInput2"
+              min="0"
+              max="5"
+              value="0"
+            />
+          </div>
+          <div class="form-group">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="pool" />
+              <label class="form-check-label" for="pool">Pool</label>
             </div>
           </div>
           <div>
             <button
               type="button"
               onclick="estimatedPriceOnclick()"
-              class="btn btn-lg btn-block"
+              class="btn btn-dark"
             >
               Calculate the price
             </button>
-            <div id="uiEstimatedPrice"><h2></h2></div>
+            <div class="pt-4" id="uiEstimatedPrice"><h2></h2></div>
           </div>
         </form>
       </div>
